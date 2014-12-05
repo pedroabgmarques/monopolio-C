@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
+//variaveis globais
+int numeroJogadores;
 
 typedef struct rc // registo de casa
 {
@@ -12,7 +13,7 @@ typedef struct rc // registo de casa
 
 } Casa;
 
-typedef struct rj//registo jogador
+typedef struct registo//registo jogador
 {
 	char nome[50];
 	float saldo;
@@ -20,11 +21,23 @@ typedef struct rj//registo jogador
 	Casa propriedadesJogador[40];
 
 
-};
+}jogador;
+//inicializacao de registos
+void inciarRegistos()
+{
+}
 
+//funcao numero de jogadores
+void numeroDeJogadores()
+{
+	
+	printf("Insira numero de jogadores.Entre 1 a 8.");
+	scanf("%d", &numeroJogadores);
+
+}
 
 int main(){
 
 
-	return 1;
+	
 }

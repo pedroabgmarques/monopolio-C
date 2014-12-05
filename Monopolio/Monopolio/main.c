@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <string.h>
 
 
 //variaveis globais
@@ -23,19 +24,19 @@ typedef struct registo//registo jogador
 	Casa propriedadesJogador[40];
 
 
-}jogador;
+}Jogador;
 //inicializacao de registos
 void inciarRegistos()
 {
 }
 
 //funcao numero de jogadores
-void numeroDeJogadores()
+int numeroDeJogadores()
 {
 	
-	printf("Insira numero de jogadores.Entre 1 a 8.");
+	printf("Insira numero de jogadores.Entre 1 a 8.\n");
 	scanf("%d", &numeroJogadores);
-
+	return (numeroJogadores);
 }
 void lançamento()
 {
@@ -51,7 +52,7 @@ void lançamento()
 	soma = dado1 + dado2;
 	printf("dado1 = %d\n", dado1);
 	printf("dado2 = %d\n", dado2);
-	printf("avança %d\n",soma);
+	printf("anda %d casas\n",soma);
 
 
 }
@@ -60,6 +61,18 @@ void lançamento()
 int main(){
 
 	Casa tabuleiro[40];
+	int a=numeroDeJogadores();
+	Jogador jogadores[8];
+	// registar num array o numero de jogadores e o estado inicial
+	int i;
+	for ( i = 0; i <a; i++)
+	{
+		printf("nome do jogador %d\n", i+1);
+		scanf("%s",&jogadores[i].nome);
+		jogadores[i].saldo = 1500;
+		
+		
+	}
 	lançamento();
 
 	// teste do ipo de casa

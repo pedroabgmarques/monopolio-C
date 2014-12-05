@@ -12,6 +12,15 @@ typedef struct rc // registo de casa
 
 } Casa;
 
+typedef struct rj//registo jogador
+{
+	char nome[50];
+	float saldo;
+	int estado;
+	Casa propriedadesJogador[40];
+
+
+};
 
 
 

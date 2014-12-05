@@ -36,7 +36,16 @@ void numeroDeJogadores()
 
 }
 
+
 int main(){
+
+	Casa tabuleiro[40];
+
+
+	// teste do ipo de casa
+	
+	
+
 
 
 	

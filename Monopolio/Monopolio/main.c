@@ -14,7 +14,16 @@ typedef struct rc // registo de casa
 
 
 
+
 int main(){
+
+	Casa tabuleiro[40];
+
+
+	// teste do ipo de casa
+	
+	
+
 
 
 	return 1;
